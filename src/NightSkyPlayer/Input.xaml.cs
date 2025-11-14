@@ -61,21 +61,21 @@ namespace NightSkyPlayer
             }
 
         }
-        private void OpacityWorker_WorkerInterval(object sender, NDC.NDynamics.Arguments.AsyncWorkerArgs e)
-        {
-            if (Opacity > 1)
-                Opacity = 1;
-            if (isClosing)
-                Opacity -= 0.04;
-            else
-                Opacity += 0.04;
-            if (Opacity <= 0)
-            {
-                holder.CanTakeInput = true;
-                Close();
-            }
+        // private void OpacityWorker_WorkerInterval(object sender, NDC.NDynamics.Arguments.AsyncWorkerArgs e)
+        // {
+        //     if (Opacity > 1)
+        //         Opacity = 1;
+        //     if (isClosing)
+        //         Opacity -= 0.04;
+        //     else
+        //         Opacity += 0.04;
+        //     if (Opacity <= 0)
+        //     {
+        //         holder.CanTakeInput = true;
+        //         Close();
+        //     }
 
-        }
+        // }
         #endregion
 
     }
